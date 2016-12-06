@@ -16,7 +16,7 @@ pull-reqしてmergeされた結果を知る。
 	```bash
 	cd documents
 	cd github
-	git clone http://github.com/yoshinotaichi/GitHubLessons.git
+	git clone http://github.com/yse2016/GitHubLessons.git
 
 	ls
 	cd GitHubLessons
