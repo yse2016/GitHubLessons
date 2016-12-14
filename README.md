@@ -3,34 +3,68 @@ Lessons on working on GitHub.
 
 GitHubを使う練習のためのリポジトリ。
 ISMR11, IS12クラスで利用するために作成した。
-20161205 by yt.
+20161205, 20161214 by yt.
 
 
 ## "ひとりで開発"する場合に必要なこと
 
-サンプル( repository )をダウンロード( clone )して、ブランチ( branch )をつくる。コード( code )を書いてマージ( merge )し、pushする。
+自分のリポジトリ( repository; 160999 )を確認して、ブランチ( branch )をつくる。コード( code )を書いてマージ( merge )し、pushする。
 
-1. リポジトリ( GitHubLessons )を clone する.
+1. 自分のリポジトリを確認する.
+
+	Commitしていないファイルがあるか, 確認する.
 
 	```bash
 	cd
 	cd documents
 	cd github
-	git clone https://github.com/yse2016/GitHubLessons.git
-	ls
+	cd 160999
+	git status
 	```
-2. ブランチ( branch; 160999など学籍番号 )をつくる.
+
+	もし, Commitしていないファイルがあれば, Commitする.
 
 	```bash
-	cd GitHubLessons
-	pwd
-	ls
-	git branch
-	git checkout -b 160999
-	git branch
+	git add .
+	git commit -m "コメントを書く"
+	git status
 	```
 
-3. コード( code )を書く.
+
+2. 今日のブランチ( branch; 20161214 など )をつくる.
+
+	1. 160999リポジトリ( repository )のdirにアクセスする.
+
+		```bash
+		cd
+		cd documents
+		cd github
+		cd 160999
+		pwd
+		ls
+		```
+
+	2. 今日のブランチ( branch )をつくる.名前を日付( 20161214 など )にする.
+
+		```bash	
+		git branch
+		git checkout -b 20161214
+		git branch
+		```
+
+3. コード( code )を書く & コンパイル & 実行する
+
+	Javaのdirがあればアクセスする.なければつくる.
+
+	```bash
+	ls
+	mkdir Java
+	cd Java
+	pwd
+	```
+
+	Javaの code を書く.
+	- file: Aloha160999.java
 
 	```java:Aloha160999.java
 	public class Aloha160999 {
@@ -40,13 +74,51 @@ ISMR11, IS12クラスで利用するために作成した。
 	}
 	```
 
-	保存してコンパイルする.		
+	保存して, コンパイル & 実行する.
 
 	```bash
-	
+	javac -encoding utf8 Aloha160999.java
+	java Aloha160999
 	```
 
-4. 
+4. mergeする
+
+	今日のブランチ( branch )を, masterブランチ( branch )にマージmergeする.
+
+	リポジトリ( repository )のdirに移動する.
+
+	```bash
+	cd
+	cd documents
+	cd github
+	cd 160999
+	```
+
+	masterブランチにきりかえる.
+
+	```bash
+	git branch
+	git checkout master
+	git branch
+	```
+
+	今日のブランチをマージ( merge )する.
+
+	```bash
+	git merge 20161214
+	```
+
+	リポジトリをpushする( github.com にアップロードする ).
+
+	```bash
+	git push origin master
+	```
+
+
+5. pushする
+
+	
+
 
 ## pull-req( プルリク )とmerge( マージ )
 
