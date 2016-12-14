@@ -6,6 +6,48 @@ ISMR11, IS12クラスで利用するために作成した。
 20161205 by yt.
 
 
+## "ひとりで開発"する場合に必要なこと
+
+サンプル( repository )をダウンロード( clone )して、ブランチ( branch )をつくる。コード( code )を書いてマージ( merge )し、pushする。
+
+1. リポジトリ( GitHubLessons )を clone する.
+
+	```bash
+	cd
+	cd documents
+	cd github
+	git clone https://github.com/yse2016/GitHubLessons.git
+	ls
+	```
+2. ブランチ( branch; 160999など学籍番号 )をつくる.
+
+	```bash
+	cd GitHubLessons
+	pwd
+	ls
+	git branch
+	git checkout -b 160999
+	git branch
+	```
+
+3. コード( code )を書く.
+
+	```java:Aloha160999.java
+	public class Aloha160999 {
+	  public static void main(String[] args) {
+	    System.out.println("ALOHA!");
+	  }
+	}
+	```
+
+	保存してコンパイルする.		
+
+	```bash
+	
+	```
+
+4. 
+
 ## pull-req( プルリク )とmerge( マージ )
 
 pull-reqしてmergeされた結果を知る。
