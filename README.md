@@ -33,7 +33,7 @@ ISMR11, IS12クラスで利用するために作成した。
 
 2. 今日のブランチ( branch; 20161214 など )をつくる.
 
-	1. 160999リポジトリ( repository )のdirにアクセスする.
+	160999リポジトリ( repository )のdirにアクセスする.
 
 		```bash
 		cd
@@ -44,7 +44,7 @@ ISMR11, IS12クラスで利用するために作成した。
 		ls
 		```
 
-	2. 今日のブランチ( branch )をつくる.名前を日付( 20161214 など )にする.
+	今日のブランチ( branch )をつくる.名前を日付( 20161214 など )にする.
 
 		```bash	
 		git branch
@@ -108,14 +108,15 @@ ISMR11, IS12クラスで利用するために作成した。
 	git merge 20161214
 	```
 
+5. pushする
+
 	リポジトリをpushする( github.com にアップロードする ).
 
 	```bash
 	git push origin master
 	```
 
-
-5. pushする
+	Google Chromeで github.com の自分のリポジトリ( repository )にアクセスして, アップロードされているか確認する.
 
 	
 
