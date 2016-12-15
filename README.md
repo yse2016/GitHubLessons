@@ -52,7 +52,7 @@ ISMR11, IS12クラスで利用するために作成した。
 		git branch
 		```
 
-3. コード( code )を書く & コンパイル & 実行する
+3. コード( code )を書く & コンパイル & 実行する & Commitする
 
 	Javaのdirがあればアクセスする.なければつくる.
 
@@ -79,6 +79,14 @@ ISMR11, IS12クラスで利用するために作成した。
 	```bash
 	javac -encoding utf8 Aloha160999.java
 	java Aloha160999
+	```
+
+	Commitする.
+	
+	```bash
+	git status
+	git add .
+	git commit -m "Aloha160999.java done."
 	```
 
 4. mergeする
