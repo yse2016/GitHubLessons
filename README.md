@@ -10,7 +10,39 @@ ISMR11, IS12クラスで利用するために作成した。
 
 自分のリポジトリ( repository; 160999 )を確認して、ブランチ( branch )をつくる。コード( code )を書いてマージ( merge )し、pushする。
 
-1. 自分のリポジトリを確認する.
+0. 自分のリポジトリを確認する.
+	
+	webサイト側( https://github.com/ )に,元となるリポジトリ( 160999, etc. )があるか確認する.
+
+	- ログインして所有するリポジトリを確認する
+		- GitHub IDが必要
+		- GitHub パスワードが必要
+	- リポジトリのwebページにアクセスする
+	- Collaboratorの設定を確認する
+		- ユーザ: yoshinotaichi が登録されているか
+		- ↑なければ登録する
+
+	同じリポジトリがPCにもある( cloneしてある )か確認する.なければ clone する.
+
+	```bash
+	cd
+	cd documents
+	cd github
+	ls
+	```
+
+	↑この時点で "160999" などのdirが表示されるはず.なければ clone してダウンロードする.
+
+	```bash
+	git clone https://github.com/yoshinotaichi/160999.git
+	ls
+	```
+
+	dirがあるか確認する.あればOK.
+
+
+
+1. 自分のリポジトリを確認する
 
 	Commitしていないファイルがあるか, 確認する.
 
